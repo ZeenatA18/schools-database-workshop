@@ -27,7 +27,22 @@ We will be using `psql` to run `sql` script from the command line.
 
 Create a folder called `schools-database` in your `projects` (or other working) folder.
 
-## Create a database
+## Database setup
+
+You can do this project locally on your machine if you have PostgreSQL installed or you can do it online using [Neon PostgreSQL](https://console.neon.tech/).
+
+## Cloud database setup
+
+To use a cloud PostgreSQL database instance create a [Neon PostgreSQL](https://console.neon.tech/) account - you can use your GitHub Account to create an account with.
+
+Once logged in to Neon PostgreSQL create a database called `schools-db`.
+Use the **SQL Editor** to interact with the database. Copy and paste the SQL commands and run them in the online editor.
+
+You don't need PostgreSQL installed locally to complete this tutorial if you are using Neon PostgreSQL.
+
+## Local database setup
+
+### Create a database
 
 Start off by creating the database
 
@@ -35,7 +50,7 @@ Start off by creating the database
 createdb schools
 ```
 
-### If you are using Ubuntu
+#### If you are using Ubuntu
 
 You might need to create the new schools database like this:
 
@@ -65,7 +80,7 @@ Grant access to the `schools` database to your current user.
 grant all privileges on database schools to your_user_name;
 ```
 
-## Connect to the database using psql
+### Connect to the database using psql
 
 Connect to the database use `psql`.
 

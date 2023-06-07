@@ -418,3 +418,19 @@ Language plpgsql;
 ```
 
 More info about creating User Defined Types in PostgreSQL: https://www.postgresqltutorial.com/postgresql-user-defined-data-types/
+
+## Create functions
+
+Create some functions that is managing a which school a learner is attending or attended in the past.
+
+Create these functions:
+
+* `linkLearnerToSchool(learner_id, school_id)` - link a learner to a school. Do nothing if the learner is already linked to a school.
+* `getLearnersCurrentSchoold(learner_id)` - get the school name of the school the learner is linked to.
+* `getSchoolsForLearner(learner_id)` - get all the schools that a learner ever attended.
+* `changeLearnerSchool(learner_id, school_id)` - change the school the learner is currently linked to. Do nothing if the learner is not lnked to a school already.
+
+
+
+
+
